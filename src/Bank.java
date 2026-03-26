@@ -12,14 +12,12 @@ public class Bank {
     public  void deposit(double amount) {
         if(amount>0)
             balance+=amount;
-        System.out.println("Deposit Successfully your Balance is: "+balance);
     }
-    public  void withdraw(double amount) {
+    public void withdraw(double amount) {
         if(amount>0)
             balance-=amount;
-        System.out.println("Withdraw Successfully Your Balance is :"+balance);
     }
-    public  void DisplayBalance(){
-        System.out.println("Holder name {"+name+"} ,Has Balance ["+balance+"]");
+    public String DisplayBalance(){
+        return "Holder name {"+name+"} ,Has Balance ["+balance+"]");
     }
 }

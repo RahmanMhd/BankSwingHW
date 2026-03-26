@@ -52,7 +52,6 @@ void main()
                 JFrame MainScreen = new JFrame("Main Screen");
 
                 JLabel lblAmount = new JLabel("Amount :");
-                JLabel lblBalance = new JLabel("Balance : ");
                 JButton btnDeposit = new JButton("Deposit");
                 JButton btnWithdraw = new JButton("Withdraw");
                 JTextField txtAmount = new JTextField();
@@ -61,10 +60,8 @@ void main()
                 txtAmount.setBounds(90, 40, 150, 25);
                 btnDeposit.setBounds(50, 90, 90, 20);
                 btnWithdraw.setBounds(150, 90, 90, 20);
-                lblBalance.setBounds(40, 130, 130, 30);
 
                 MainScreen.add(lblAmount);
-                MainScreen.add(lblBalance);
                 MainScreen.add(txtAmount);
                 MainScreen.add(btnDeposit);
                 MainScreen.add(btnWithdraw);
@@ -94,7 +91,6 @@ void main()
                 btnWithdraw.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
                         double Amount = Double.parseDouble(txtAmount.getText());
 
                         if (Amount > finalAccount.balance) {
@@ -108,7 +104,6 @@ void main()
                         }
                     }
                 });
-
             }
         }
     });
