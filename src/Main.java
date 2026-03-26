@@ -82,8 +82,7 @@ void main()
                             JOptionPane.showMessageDialog(MainScreen, "Amount Invalid");
                         } else {
                             finalAccount.deposit(Amount);
-                            JOptionPane.showMessageDialog(MainScreen,
-                                    "New Balance : " + finalAccount.balance);
+                            JOptionPane.showMessageDialog(MainScreen, finalAccount.DisplayBalance());
                         }
                     }
                 });
@@ -99,8 +98,7 @@ void main()
                             JOptionPane.showMessageDialog(MainScreen, "Amount Invalid");
                         } else {
                             finalAccount.withdraw(Amount);
-                            JOptionPane.showMessageDialog(MainScreen,
-                                    "New Balance : " + finalAccount.balance);
+                            JOptionPane.showMessageDialog(MainScreen,finalAccount.DisplayBalance());
                         }
                     }
                 });
